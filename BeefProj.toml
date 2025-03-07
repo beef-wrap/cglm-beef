@@ -1,0 +1,10 @@
+FileVersion = 1
+
+[Project]
+Name = "cglm-beef"
+TargetType = "BeefLib"
+StartupObject = "cglm_beef.Program"
+
+[Configs.Debug.Win64]
+CLibType = "DynamicDebug"
+LibPaths = ["$(ProjectDir)\\libs\\cglm.lib"]
