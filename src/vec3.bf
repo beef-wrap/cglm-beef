@@ -617,7 +617,7 @@ extension cglm
 	 * @param[in]  mask mask
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_swizzle(vec3 v, int mask, vec3 dest);
+	[CLink] public static extern void glm_vec3_swizzle(vec3 v, c_int mask, vec3 dest);
 
 	/*!
 	 * @brief vec3 cross product

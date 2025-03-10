@@ -12,22 +12,22 @@ namespace cglm_Beef;
 
 extension cglm
 {
-	const int GLM_LBN = 0; /* left  bottom near */
-	const int GLM_LTN = 1; /* left  top    near */
-	const int GLM_RTN = 2; /* right top    near */
-	const int GLM_RBN = 3; /* right bottom near */
+	const c_int GLM_LBN = 0; /* left  bottom near */
+	const c_int GLM_LTN = 1; /* left  top    near */
+	const c_int GLM_RTN = 2; /* right top    near */
+	const c_int GLM_RBN = 3; /* right bottom near */
 
-	const int GLM_LBF = 4; /* left  bottom far  */
-	const int GLM_LTF = 5; /* left  top    far  */
-	const int GLM_RTF = 6; /* right top    far  */
-	const int GLM_RBF = 7; /* right bottom far  */
+	const c_int GLM_LBF = 4; /* left  bottom far  */
+	const c_int GLM_LTF = 5; /* left  top    far  */
+	const c_int GLM_RTF = 6; /* right top    far  */
+	const c_int GLM_RBF = 7; /* right bottom far  */
 
-	const int GLM_LEFT   = 0;
-	const int GLM_RIGHT  = 1;
-	const int GLM_BOTTOM = 2;
-	const int GLM_TOP    = 3;
-	const int GLM_NEAR   = 4;
-	const int GLM_FAR    = 5;
+	const c_int GLM_LEFT   = 0;
+	const c_int GLM_RIGHT  = 1;
+	const c_int GLM_BOTTOM = 2;
+	const c_int GLM_TOP    = 3;
+	const c_int GLM_NEAR   = 4;
+	const c_int GLM_FAR    = 5;
 
 #if !GLM_CUSTOM_CLIPSPACE
 	/* you can override clip space coords

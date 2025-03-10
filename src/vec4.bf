@@ -555,7 +555,7 @@ extension cglm
 	 * @param[in]  mask mask
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec4_swizzle(vec4 v, int mask, vec4 dest);
+	[CLink] public static extern void glm_vec4_swizzle(vec4 v, c_int mask, vec4 dest);
 
 	/*!
 	 * @brief Create four dimensional vector from pointer

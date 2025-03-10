@@ -6,7 +6,7 @@
  */
 
 using System;
-using System.Interop;
+using System.c_Interop;
 
 namespace cglm_Beef;
 
@@ -22,7 +22,7 @@ extension cglm
 	 * @param[in]  last last item
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec4(ivec3 v3, int last, ivec4 dest);
+	[CLink] public static extern void glm_ivec4(ivec3 v3, c_int last, ivec4 dest);
 
 	/*!
 	 * @brief copy all members of [a] to [dest]
@@ -62,7 +62,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec4_adds(ivec4 v, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_adds(ivec4 v, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief subtract vector [b] from vector [a] and store result in [dest]
@@ -80,7 +80,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec4_subs(ivec4 v, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_subs(ivec4 v, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief multiply vector [a] with vector [b] and store result in [dest]
@@ -98,7 +98,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec4_scale(ivec4 v, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_scale(ivec4 v, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief add vector [a] with vector [b] and add result to vector [dest]
@@ -120,7 +120,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a + s)
 	 */
-	[CLink] public static extern void glm_ivec4_addadds(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_addadds(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief subtract vector [a] from vector [b] and add result to [dest]
@@ -142,7 +142,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a - s)
 	 */
-	[CLink] public static extern void glm_ivec4_subadds(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_subadds(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief multiply vector [a] with vector [b] and add result to [dest]
@@ -164,7 +164,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a * s)
 	 */
-	[CLink] public static extern void glm_ivec4_muladds(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_muladds(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief add maximum of vector [a] and vector [b] to vector [dest]
@@ -208,7 +208,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a - s)
 	 */
-	[CLink] public static extern void glm_ivec4_subsubs(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_subsubs(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief add vector [a] to vector [b] and subtract the result from [dest]
@@ -230,7 +230,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a + b)
 	 */
-	[CLink] public static extern void glm_ivec4_addsubs(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_addsubs(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief multiply vector [a] and vector [b] and subtract the result from [dest]
@@ -252,7 +252,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a * s)
 	 */
-	[CLink] public static extern void glm_ivec4_mulsubs(ivec4 a, int s, ivec4 dest);
+	[CLink] public static extern void glm_ivec4_mulsubs(ivec4 a, c_int s, ivec4 dest);
 
 	/*!
 	 * @brief subtract maximum of vector [a] and vector [b] from vector [dest]
@@ -283,7 +283,7 @@ extension cglm
 	 * @param[in] b second vector
 	 * @return returns squared distance (distance * distance)
 	 */
-	[CLink] public static extern int glm_ivec4_distance2(ivec4 a, ivec4 b);
+	[CLink] public static extern c_int glm_ivec4_distance2(ivec4 a, ivec4 b);
 
 	/*!
 	 * @brief distance between two vectors
@@ -320,7 +320,7 @@ extension cglm
 	 * @param[in]      minVal minimum value
 	 * @param[in]      maxVal maximum value
 	 */
-	[CLink] public static extern void glm_ivec4_clamp(ivec4 v, int minVal, int maxVal);
+	[CLink] public static extern void glm_ivec4_clamp(ivec4 v, c_int minVal, c_int maxVal);
 
 	/*!
 	 * @brief absolute value of v

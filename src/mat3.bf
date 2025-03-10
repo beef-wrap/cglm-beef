@@ -170,7 +170,7 @@ extension cglm
 	 * @param[in]     col1 col1
 	 * @param[in]     col2 col2
 	 */
-	[CLink] public static extern void glm_mat3_swap_col(mat3 mat, int col1, int col2);
+	[CLink] public static extern void glm_mat3_swap_col(mat3 mat, c_int col1, c_int col2);
 
 	/*!
 	 * @brief swap two matrix rows
@@ -179,7 +179,7 @@ extension cglm
 	 * @param[in]     row1 row1
 	 * @param[in]     row2 row2
 	 */
-	[CLink] public static extern void glm_mat3_swap_row(mat3 mat, int row1, int row2);
+	[CLink] public static extern void glm_mat3_swap_row(mat3 mat, c_int row1, c_int row2);
 
 	/*!
 	 * @brief helper for  R (row vector) * M (matrix) * C (column vector)

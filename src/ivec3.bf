@@ -53,7 +53,7 @@ extension cglm
 	 *
 	 * @return dot product
 	 */
-	[CLink] public static extern int glm_ivec3_dot(ivec3 a, ivec3 b);
+	[CLink] public static extern c_int glm_ivec3_dot(ivec3 a, ivec3 b);
 
 	/*!
 	 * @brief norm * norm (magnitude) of vec
@@ -66,7 +66,7 @@ extension cglm
 	 *
 	 * @return norm * norm
 	 */
-	[CLink] public static extern int glm_ivec3_norm2(ivec3 v);
+	[CLink] public static extern c_int glm_ivec3_norm2(ivec3 v);
 
 	/*!
 	 * @brief euclidean norm (magnitude), also called L2 norm
@@ -76,7 +76,7 @@ extension cglm
 	 *
 	 * @return norm
 	 */
-	[CLink] public static extern int glm_ivec3_norm(ivec3 v);
+	[CLink] public static extern c_int glm_ivec3_norm(ivec3 v);
 
 	/*!
 	 * @brief add vector [a] to vector [b] and store result in [dest]
@@ -94,7 +94,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_adds(ivec3 v, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_adds(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief subtract vector [b] from vector [a] and store result in [dest]
@@ -112,7 +112,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_subs(ivec3 v, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_subs(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] with vector [b] and store result in [dest]
@@ -130,7 +130,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_scale(ivec3 v, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_scale(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief div vector with another component-wise division: d = a / b
@@ -148,7 +148,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest result = (a[0]/s, a[1]/s, a[2]/s)
 	 */
-	[CLink] public static extern void glm_ivec3_divs(ivec3 v, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_divs(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief Element-wise modulo operation on ivec3 vectors: dest = a % b
@@ -185,7 +185,7 @@ extension cglm
 	 */
 	[CLink] public static extern
 		void
-		glm_ivec3_addadds(ivec3 a, int s, ivec3 dest);
+		glm_ivec3_addadds(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief subtract vector [a] from vector [b] and add result to [dest]
@@ -209,7 +209,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a - s)
 	 */
-	[CLink] public static extern  void  glm_ivec3_subadds(ivec3 a, int s, ivec3 dest);
+	[CLink] public static extern  void  glm_ivec3_subadds(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] with vector [b] and add result to [dest]
@@ -231,7 +231,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a * s)
 	 */
-	[CLink] public static extern  void  glm_ivec3_muladds(ivec3 a, int s, ivec3 dest);
+	[CLink] public static extern  void  glm_ivec3_muladds(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief add maximum of vector [a] and vector [b] to vector [dest]
@@ -275,7 +275,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a - s)
 	 */
-	[CLink] public static extern void glm_ivec3_subsubs(ivec3 a, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_subsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief add vector [a] to vector [b] and subtract the result from [dest]
@@ -297,7 +297,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a + b)
 	 */
-	[CLink] public static extern void glm_ivec3_addsubs(ivec3 a, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_addsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] and vector [b] and subtract the result from [dest]
@@ -319,7 +319,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a * s)
 	 */
-	[CLink] public static extern void glm_ivec3_mulsubs(ivec3 a, int s, ivec3 dest);
+	[CLink] public static extern void glm_ivec3_mulsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief subtract maximum of vector [a] and vector [b] from vector [dest]
@@ -350,7 +350,7 @@ extension cglm
 	 * @param[in] b second vector
 	 * @return returns squared distance (distance * distance)
 	 */
-	[CLink] public static extern int glm_ivec3_distance2(ivec3 a, ivec3 b);
+	[CLink] public static extern c_int glm_ivec3_distance2(ivec3 a, ivec3 b);
 
 	/*!
 	 * @brief distance between two vectors
@@ -367,7 +367,7 @@ extension cglm
 	 * @param[out] v   dest
 	 * @param[in]  val value
 	 */
-	[CLink] public static extern void glm_ivec3_fill(ivec3 v, int val);
+	[CLink] public static extern void glm_ivec3_fill(ivec3 v, c_int val);
 
 	/*!
 	 * @brief check if vector is equal to value
@@ -375,7 +375,7 @@ extension cglm
 	 * @param[in] v   vector
 	 * @param[in] val value
 	 */
-	[CLink] public static extern bool glm_ivec3_eq(ivec3 v, int val);
+	[CLink] public static extern bool glm_ivec3_eq(ivec3 v, c_int val);
 
 	/*!
 	 * @brief check if vector is equal to another
@@ -410,7 +410,7 @@ extension cglm
 	 * @param[in]      minVal minimum value
 	 * @param[in]      maxVal maximum value
 	 */
-	[CLink] public static extern void glm_ivec3_clamp(ivec3 v, int minVal, int maxVal);
+	[CLink] public static extern void glm_ivec3_clamp(ivec3 v, c_int minVal, c_int maxVal);
 
 	/*!
 	 * @brief absolute value of v

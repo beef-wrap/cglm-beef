@@ -409,7 +409,7 @@ extension cglm
 	 * @param[in]  mask mask
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec2_swizzle(vec2 v, int mask, vec2 dest);
+	[CLink] public static extern void glm_vec2_swizzle(vec2 v, c_int mask, vec2 dest);
 
 	/*!
 	 * @brief linear interpolation between two vector
