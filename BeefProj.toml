@@ -3,7 +3,8 @@ FileVersion = 1
 [Project]
 Name = "cglm-beef"
 TargetType = "BeefLib"
-StartupObject = "cglm_beef.Program"
+StartupObject = "cglm.Program"
+DefaultNamespace = "cglm"
 
 [Configs.Debug.Win64]
 CLibType = "DynamicDebug"

@@ -6,9 +6,9 @@
  */
 
 using System;
-using System.c_Interop;
+using System.Interop;
 
-namespace cglm_Beef;
+namespace cglm;
 
 extension cglm
 {

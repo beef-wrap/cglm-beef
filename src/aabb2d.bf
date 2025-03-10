@@ -15,7 +15,7 @@
 using System;
 using System.Interop;
 
-namespace cglm_Beef;
+namespace cglm;
 
 extension cglm
 {

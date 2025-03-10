@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Interop;
 
-using static cglm_Beef.cglm;
+using static cglm.cglm;
 
 namespace example;
 
