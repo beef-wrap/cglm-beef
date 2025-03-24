@@ -63,7 +63,7 @@ extension cglm
 	* @endcode
 	* you may need to explicit cast if required
 	*/
-	public enum glm_euler_seq
+	public enum glm_euler_seq : c_int
 	{
 		GLM_EULER_XYZ = 0 << 0 | 1 << 2 | 2 << 4,
 		GLM_EULER_XZY = 0 << 0 | 2 << 2 | 1 << 4,
