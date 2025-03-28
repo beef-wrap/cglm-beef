@@ -7,8 +7,7 @@ StartupObject = "cglm.Program"
 DefaultNamespace = "cglm"
 
 [Configs.Debug.Win64]
-CLibType = "DynamicDebug"
-LibPaths = ["$(ProjectDir)\\libs\\windows\\cglmd.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\cglm_d.lib"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\cglm.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\cglm.lib"]
