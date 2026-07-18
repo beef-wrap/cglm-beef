@@ -62,7 +62,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat4_ucopy(mat4 mat, mat4 dest);
+	[CLink] public static extern void glmc_mat4_ucopy(mat4 mat, mat4 dest);
 
 	/*!
 	 * @brief copy all members of [mat] to [dest]
@@ -70,7 +70,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat4_copy(mat4 mat, mat4 dest);
+	[CLink] public static extern void glmc_mat4_copy(mat4 mat, mat4 dest);
 
 	/*!
 	 * @brief make given matrix identity. It is identical with below, 
@@ -86,7 +86,7 @@ extension cglm
 	 *
 	 * @param[in, out]  mat  destination
 	 */
-	[CLink] public static extern void glm_mat4_identity(mat4 mat);
+	[CLink] public static extern void glmc_mat4_identity(mat4 mat);
 
 	/*!
 	 * @brief make given matrix array's each element identity matrix
@@ -96,14 +96,14 @@ extension cglm
 	 *
 	 * @param[in]       count count of matrices
 	 */
-	[CLink] public static extern void glm_mat4_identity_array(mat4* mat, size_t count);
+	[CLink] public static extern void glmc_mat4_identity_array(mat4* mat, size_t count);
 
 	/*!
 	 * @brief make given matrix zero.
 	 *
 	 * @param[in, out]  mat  matrix
 	 */
-	[CLink] public static extern void glm_mat4_zero(mat4 mat);
+	[CLink] public static extern void glmc_mat4_zero(mat4 mat);
 
 	/*!
 	 * @brief copy upper-left of mat4 to mat3
@@ -111,7 +111,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat4_pick3(mat4 mat, mat3 dest);
+	[CLink] public static extern void glmc_mat4_pick3(mat4 mat, mat3 dest);
 
 	/*!
 	 * @brief copy upper-left of mat4 to mat3 (transposed)
@@ -121,7 +121,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat4_pick3t(mat4 mat, mat3 dest);
+	[CLink] public static extern void glmc_mat4_pick3t(mat4 mat, mat3 dest);
 
 	/*!
 	 * @brief copy mat3 to mat4's upper-left
@@ -129,7 +129,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat4_ins3(mat3 mat, mat4 dest);
+	[CLink] public static extern void glmc_mat4_ins3(mat3 mat, mat4 dest);
 
 	/*!
 	 * @brief multiply m1 and m2 to dest
@@ -145,7 +145,7 @@ extension cglm
 	 * @param[in]  m2   right matrix
 	 * @param[out] dest destination matrix
 	 */
-	[CLink] public static extern void glm_mat4_mul(mat4 m1, mat4 m2, mat4 dest);
+	[CLink] public static extern void glmc_mat4_mul(mat4 m1, mat4 m2, mat4 dest);
 
 	/*!
 	 * @brief mupliply N mat4 matrices and store result in dest
@@ -166,7 +166,7 @@ extension cglm
 	 * @param[in]  len      matrices count
 	 * @param[out] dest     result
 	 */
-	[CLink] public static extern void glm_mat4_mulN(mat4[]* matrices, uint32_t len, mat4 dest);
+	[CLink] public static extern void glmc_mat4_mulN(mat4[]* matrices, uint32_t len, mat4 dest);
 
 	/*!
 	 * @brief multiply mat4 with vec4 (column vector) and store in dest vector
@@ -175,7 +175,7 @@ extension cglm
 	 * @param[in]  v    vec4 (right, column vector)
 	 * @param[out] dest vec4 (result, column vector)
 	 */
-	[CLink] public static extern void glm_mat4_mulv(mat4 m, vec4 v, vec4 dest);
+	[CLink] public static extern void glmc_mat4_mulv(mat4 m, vec4 v, vec4 dest);
 
 	/*!
 	 * @brief trace of matrix
@@ -184,7 +184,7 @@ extension cglm
 	 *
 	 * @param[in]  m matrix
 	 */
-	[CLink] public static extern float glm_mat4_trace(mat4 m);
+	[CLink] public static extern float glmc_mat4_trace(mat4 m);
 
 	/*!
 	 * @brief trace of matrix (rotation part)
@@ -193,7 +193,7 @@ extension cglm
 	 *
 	 * @param[in]  m matrix
 	 */
-	[CLink] public static extern float glm_mat4_trace3(mat4 m);
+	[CLink] public static extern float glmc_mat4_trace3(mat4 m);
 
 	/*!
 	 * @brief convert mat4's rotation part to quaternion
@@ -201,7 +201,7 @@ extension cglm
 	 * @param[in]  m    affine matrix
 	 * @param[out] dest destination quaternion
 	 */
-	[CLink] public static extern void glm_mat4_quat(mat4 m, versor dest);
+	[CLink] public static extern void glmc_mat4_quat(mat4 m, versor dest);
 
 	/*!
 	 * @brief multiply vector with mat4
@@ -214,7 +214,7 @@ extension cglm
 	 * @param[in]  last 4th item to make it vec4
 	 * @param[out] dest result vector (vec3)
 	 */
-	[CLink] public static extern void glm_mat4_mulv3(mat4 m, vec3 v, float last, vec3 dest);
+	[CLink] public static extern void glmc_mat4_mulv3(mat4 m, vec3 v, float last, vec3 dest);
 
 	/*!
 	 * @brief transpose mat4 and store in dest
@@ -224,14 +224,14 @@ extension cglm
 	 * @param[in]  m    matrix
 	 * @param[out] dest result
 	 */
-	[CLink] public static extern void glm_mat4_transpose_to(mat4 m, mat4 dest);
+	[CLink] public static extern void glmc_mat4_transpose_to(mat4 m, mat4 dest);
 
 	/*!
 	 * @brief transpose mat4 and store result in same matrix
 	 *
 	 * @param[in, out] m source and dest
 	 */
-	[CLink] public static extern void glm_mat4_transpose(mat4 m);
+	[CLink] public static extern void glmc_mat4_transpose(mat4 m);
 
 	/*!
 	 * @brief scale (multiply with scalar) matrix without simd optimization
@@ -241,7 +241,7 @@ extension cglm
 	 * @param[in, out] m matrix
 	 * @param[in]      s scalar
 	 */
-	[CLink] public static extern void glm_mat4_scale_p(mat4 m, float s);
+	[CLink] public static extern void glmc_mat4_scale_p(mat4 m, float s);
 
 	/*!
 	 * @brief scale (multiply with scalar) matrix
@@ -251,7 +251,7 @@ extension cglm
 	 * @param[in, out] m matrix
 	 * @param[in]      s scalar
 	 */
-	[CLink] public static extern void glm_mat4_scale(mat4 m, float s);
+	[CLink] public static extern void glmc_mat4_scale(mat4 m, float s);
 
 	/*!
 	 * @brief mat4 determinant
@@ -260,7 +260,7 @@ extension cglm
 	 *
 	 * @return determinant
 	 */
-	[CLink] public static extern float glm_mat4_det(mat4 mat);
+	[CLink] public static extern float glmc_mat4_det(mat4 mat);
 
 	/*!
 	 * @brief inverse mat4 and store in dest
@@ -268,7 +268,7 @@ extension cglm
 	 * @param[in]  mat  matrix
 	 * @param[out] dest inverse matrix
 	 */
-	[CLink] public static extern void glm_mat4_inv(mat4 mat, mat4 dest);
+	[CLink] public static extern void glmc_mat4_inv(mat4 mat, mat4 dest);
 
 	/*!
 	 * @brief inverse mat4 and store in dest
@@ -282,7 +282,7 @@ extension cglm
 	 * @param[in]  mat  matrix
 	 * @param[out] dest inverse matrix
 	 */
-	[CLink] public static extern void glm_mat4_inv_fast(mat4 mat, mat4 dest);
+	[CLink] public static extern void glmc_mat4_inv_fast(mat4 mat, mat4 dest);
 
 	/*!
 	 * @brief swap two matrix columns
@@ -291,7 +291,7 @@ extension cglm
 	 * @param[in]     col1 col1
 	 * @param[in]     col2 col2
 	 */
-	[CLink] public static extern void glm_mat4_swap_col(mat4 mat, c_int col1, c_int col2);
+	[CLink] public static extern void glmc_mat4_swap_col(mat4 mat, c_int col1, c_int col2);
 
 	/*!
 	 * @brief swap two matrix rows
@@ -300,7 +300,7 @@ extension cglm
 	 * @param[in]     row1 row1
 	 * @param[in]     row2 row2
 	 */
-	[CLink] public static extern void glm_mat4_swap_row(mat4 mat, c_int row1, c_int row2);
+	[CLink] public static extern void glmc_mat4_swap_row(mat4 mat, c_int row1, c_int row2);
 
 	/*!
 	 * @brief helper for  R (row vector) * M (matrix) * C (column vector)
@@ -316,7 +316,7 @@ extension cglm
 	 *
 	 * @return scalar value e.g. B(s)
 	 */
-	[CLink] public static extern float glm_mat4_rmc(vec4 r, mat4 m, vec4 c);
+	[CLink] public static extern float glmc_mat4_rmc(vec4 r, mat4 m, vec4 c);
 
 	/*!
 	 * @brief Create mat4 matrix from pointer
@@ -324,5 +324,5 @@ extension cglm
 	 * @param[in]  src  pointer to an array of floats
 	 * @param[out] dest matrix
 	 */
-	[CLink] public static extern void glm_mat4_make(float* src, mat4 dest);
+	[CLink] public static extern void glmc_mat4_make(float* src, mat4 dest);
 }

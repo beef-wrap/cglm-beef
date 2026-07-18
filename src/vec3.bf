@@ -44,7 +44,7 @@ extension cglm
 	 * @param[in]  v4   vector4
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3(vec4 v4, vec3 dest);
+	[CLink] public static extern void glmc_vec3(vec4 v4, vec3 dest);
 
 	/*!
 	 * @brief copy all members of [a] to [dest]
@@ -52,21 +52,21 @@ extension cglm
 	 * @param[in]  a    source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_copy(vec3 a, vec3 dest);
+	[CLink] public static extern void glmc_vec3_copy(vec3 a, vec3 dest);
 
 	/*!
 	 * @brief make vector zero
 	 *
 	 * @param[in, out]  v vector
 	 */
-	[CLink] public static extern void glm_vec3_zero(vec3 v);
+	[CLink] public static extern void glmc_vec3_zero(vec3 v);
 
 	/*!
 	 * @brief make vector one
 	 *
 	 * @param[in, out]  v vector
 	 */
-	[CLink] public static extern void glm_vec3_one(vec3 v);
+	[CLink] public static extern void glmc_vec3_one(vec3 v);
 
 	/*!
 	 * @brief vec3 dot product
@@ -76,7 +76,7 @@ extension cglm
 	 *
 	 * @return dot product
 	 */
-	[CLink] public static extern float glm_vec3_dot(vec3 a, vec3 b);
+	[CLink] public static extern float glmc_vec3_dot(vec3 a, vec3 b);
 
 	/*!
 	 * @brief norm * norm (magnitude) of vec
@@ -89,7 +89,7 @@ extension cglm
 	 *
 	 * @return norm * norm
 	 */
-	[CLink] public static extern float glm_vec3_norm2(vec3 v);
+	[CLink] public static extern float glmc_vec3_norm2(vec3 v);
 
 	/*!
 	 * @brief euclidean norm (magnitude), also called L2 norm
@@ -99,7 +99,7 @@ extension cglm
 	 *
 	 * @return norm
 	 */
-	[CLink] public static extern float glm_vec3_norm(vec3 v);
+	[CLink] public static extern float glmc_vec3_norm(vec3 v);
 
 	/*!
 	 * @brief L1 norm of vec3
@@ -115,7 +115,7 @@ extension cglm
 	 *
 	 * @return L1 norm
 	 */
-	[CLink] public static extern float glm_vec3_norm_one(vec3 v);
+	[CLink] public static extern float glmc_vec3_norm_one(vec3 v);
 
 	/*!
 	 * @brief infinity norm of vec3
@@ -130,7 +130,7 @@ extension cglm
 	 *
 	 * @return infinity norm
 	 */
-	[CLink] public static extern float glm_vec3_norm_inf(vec3 v);
+	[CLink] public static extern float glmc_vec3_norm_inf(vec3 v);
 
 /*!
  * @brief add a vector to b vector store result in dest
@@ -139,7 +139,7 @@ extension cglm
  * @param[in]  b    vector2
  * @param[out] dest destination vector
  */
-	[CLink] public static extern void glm_vec3_add(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_add(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief add scalar to v vector store result in dest (d = v + s)
@@ -148,7 +148,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_adds(vec3 v, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_adds(vec3 v, float s, vec3 dest);
 
 	/*!
 	 * @brief subtract b vector from a vector store result in dest
@@ -157,7 +157,7 @@ extension cglm
 	 * @param[in]  b    vector2
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_sub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_sub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief subtract scalar from v vector store result in dest (d = v - s)
@@ -166,7 +166,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_subs(vec3 v, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_subs(vec3 v, float s, vec3 dest);
 
 	/*!
 	 * @brief multiply two vectors (component-wise multiplication)
@@ -175,7 +175,7 @@ extension cglm
 	 * @param b    vector2
 	 * @param dest v3 = (a[0] * b[0], a[1] * b[1], a[2] * b[2])
 	 */
-	[CLink] public static extern void glm_vec3_mul(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_mul(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief multiply/scale vec3 vector with scalar: result = v * s
@@ -184,7 +184,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_scale(vec3 v, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_scale(vec3 v, float s, vec3 dest);
 
 	/*!
 	 * @brief make vec3 vector scale as specified: result = unit(v) * s
@@ -193,7 +193,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_scale_as(vec3 v, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_scale_as(vec3 v, float s, vec3 dest);
 
 	/*!
 	 * @brief div vector with another component-wise division: d = a / b
@@ -202,7 +202,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest result = (a[0]/b[0], a[1]/b[1], a[2]/b[2])
 	 */
-	[CLink] public static extern void glm_vec3_div(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_div(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief div vector with scalar: d = v / s
@@ -211,7 +211,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest result = (a[0]/s, a[1]/s, a[2]/s)
 	 */
-	[CLink] public static extern void glm_vec3_divs(vec3 v, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_divs(vec3 v, float s, vec3 dest);
 
 	/*!
 	 * @brief add two vectors and add result to sum
@@ -222,7 +222,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest += (a + b)
 	 */
-	[CLink] public static extern void glm_vec3_addadd(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_addadd(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief sub two vectors and add result to dest
@@ -233,7 +233,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest += (a + b)
 	 */
-	[CLink] public static extern void glm_vec3_subadd(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_subadd(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief mul two vectors and add result to dest
@@ -244,7 +244,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest += (a * b)
 	 */
-	[CLink] public static extern void glm_vec3_muladd(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_muladd(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief mul vector with scalar and add result to sum
@@ -255,7 +255,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest += (a * b)
 	 */
-	[CLink] public static extern void glm_vec3_muladds(vec3 a, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_muladds(vec3 a, float s, vec3 dest);
 
 	/*!
 	 * @brief add max of two vectors to result/dest
@@ -266,7 +266,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest += max(a, b)
 	 */
-	[CLink] public static extern void glm_vec3_maxadd(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_maxadd(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief add min of two vectors to result/dest
@@ -277,7 +277,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest += min(a, b)
 	 */
-	[CLink] public static extern void glm_vec3_minadd(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_minadd(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief sub two vectors and sub result to dest
@@ -288,7 +288,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest -= (a - b)
 	 */
-	[CLink] public static extern void glm_vec3_subsub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_subsub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief add two vectors and sub result to dest
@@ -299,7 +299,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest -= (a + b)
 	 */
-	[CLink] public static extern void glm_vec3_addsub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_addsub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief mul two vectors and sub result to dest
@@ -310,7 +310,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest -= (a * b)
 	 */
-	[CLink] public static extern void glm_vec3_mulsub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_mulsub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief mul vector with scalar and sub result to dest
@@ -321,7 +321,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a * b)
 	 */
-	[CLink] public static extern void glm_vec3_mulsubs(vec3 a, float s, vec3 dest);
+	[CLink] public static extern void glmc_vec3_mulsubs(vec3 a, float s, vec3 dest);
 
 	/*!
 	 * @brief sub max of two vectors to result/dest
@@ -332,7 +332,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest -= max(a, b)
 	 */
-	[CLink] public static extern void glm_vec3_maxsub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_maxsub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief sub min of two vectors to result/dest
@@ -343,7 +343,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest dest -= min(a, b)
 	 */
-	[CLink] public static extern void glm_vec3_minsub(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_minsub(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief negate vector components and store result in dest
@@ -351,21 +351,21 @@ extension cglm
 	 * @param[in]   v     vector
 	 * @param[out]  dest  result vector
 	 */
-	[CLink] public static extern void glm_vec3_negate_to(vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_vec3_negate_to(vec3 v, vec3 dest);
 
 	/*!
 	 * @brief negate vector components
 	 *
 	 * @param[in, out]  v  vector
 	 */
-	[CLink] public static extern void glm_vec3_negate(vec3 v);
+	[CLink] public static extern void glmc_vec3_negate(vec3 v);
 
 	/*!
 	 * @brief normalize vec3 and store result in same vec
 	 *
 	 * @param[in, out] v vector
 	 */
-	[CLink] public static extern void glm_vec3_normalize(vec3 v);
+	[CLink] public static extern void glmc_vec3_normalize(vec3 v);
 
 	/*!
 	 * @brief normalize vec3 to dest
@@ -373,7 +373,7 @@ extension cglm
 	 * @param[in]  v    source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_normalize_to(vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_vec3_normalize_to(vec3 v, vec3 dest);
 
 	/*!
 	 * @brief cross product of two vector (RH)
@@ -382,7 +382,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_cross(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_cross(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief cross product of two vector (RH) and normalize the result
@@ -391,7 +391,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_crossn(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_crossn(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief angle between two vector
@@ -401,7 +401,7 @@ extension cglm
 	 *
 	 * @return angle as radians
 	 */
-	[CLink] public static extern float glm_vec3_angle(vec3 a, vec3 b);
+	[CLink] public static extern float glmc_vec3_angle(vec3 a, vec3 b);
 
 	/*!
 	 * @brief rotate vec3 around axis by angle using Rodrigues' rotation formula
@@ -410,7 +410,7 @@ extension cglm
 	 * @param[in]      axis  axis vector (must be unit vector)
 	 * @param[in]      angle angle by radians
 	 */
-	[CLink] public static extern void glm_vec3_rotate(vec3 v, float angle, vec3 axis);
+	[CLink] public static extern void glmc_vec3_rotate(vec3 v, float angle, vec3 axis);
 
 	/*!
 	 * @brief apply rotation matrix to vector
@@ -425,7 +425,7 @@ extension cglm
 	 * @param[in]  v    vector
 	 * @param[out] dest rotated vector
 	 */
-	[CLink] public static extern void glm_vec3_rotate_m4(mat4 m, vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_vec3_rotate_m4(mat4 m, vec3 v, vec3 dest);
 
 	/*!
 	 * @brief apply rotation matrix to vector
@@ -434,7 +434,7 @@ extension cglm
 	 * @param[in]  v    vector
 	 * @param[out] dest rotated vector
 	 */
-	[CLink] public static extern void glm_vec3_rotate_m3(mat3 m, vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_vec3_rotate_m3(mat3 m, vec3 v, vec3 dest);
 
 	/*!
 	 * @brief project a vector onto b vector
@@ -443,7 +443,7 @@ extension cglm
 	 * @param[in]  b    vector2
 	 * @param[out] dest projected vector
 	 */
-	[CLink] public static extern void glm_vec3_proj(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_proj(vec3 a, vec3 b, vec3 dest);
 
 	/**
 	 * @brief find center point of two vector
@@ -452,7 +452,7 @@ extension cglm
 	 * @param[in]  b    vector2
 	 * @param[out] dest center point
 	 */
-	[CLink] public static extern void glm_vec3_center(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_center(vec3 a, vec3 b, vec3 dest);
 
 	/**
 	 * @brief squared distance between two vectors
@@ -461,7 +461,7 @@ extension cglm
 	 * @param[in] b vector2
 	 * @return returns squared distance (distance * distance)
 	 */
-	[CLink] public static extern float glm_vec3_distance2(vec3 a, vec3 b);
+	[CLink] public static extern float glmc_vec3_distance2(vec3 a, vec3 b);
 
 	/**
 	 * @brief distance between two vectors
@@ -470,7 +470,7 @@ extension cglm
 	 * @param[in] b vector2
 	 * @return returns distance
 	 */
-	[CLink] public static extern float glm_vec3_distance(vec3 a, vec3 b);
+	[CLink] public static extern float glmc_vec3_distance(vec3 a, vec3 b);
 
 	/*!
 	 * @brief max values of vectors
@@ -479,7 +479,7 @@ extension cglm
 	 * @param[in]  b    vector2
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_maxv(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_maxv(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief min values of vectors
@@ -488,7 +488,7 @@ extension cglm
 	 * @param[in]  b    vector2
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_minv(vec3 a, vec3 b, vec3 dest);
+	[CLink] public static extern void glmc_vec3_minv(vec3 a, vec3 b, vec3 dest);
 
 	/*!
 	 * @brief possible orthogonal/perpendicular vector
@@ -496,7 +496,7 @@ extension cglm
 	 * @param[in]  v    vector
 	 * @param[out] dest orthogonal/perpendicular vector
 	 */
-	[CLink] public static extern void glm_vec3_ortho(vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_vec3_ortho(vec3 v, vec3 dest);
 
 	/*!
 	 * @brief clamp vector's individual members between min and max values
@@ -505,7 +505,7 @@ extension cglm
 	 * @param[in]       minVal minimum value
 	 * @param[in]       maxVal maximum value
 	 */
-	[CLink] public static extern void glm_vec3_clamp(vec3 v, float minVal, float maxVal);
+	[CLink] public static extern void glmc_vec3_clamp(vec3 v, float minVal, float maxVal);
 
 	/*!
 	 * @brief linear interpolation between two vectors
@@ -517,7 +517,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount)
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_lerp(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_lerp(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief linear interpolation between two vectors (clamped)
@@ -529,7 +529,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount) clamped between 0 and 1
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_lerpc(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_lerpc(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief linear interpolation between two vectors
@@ -541,7 +541,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount)
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_mix(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_mix(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief linear interpolation between two vectors (clamped)
@@ -553,7 +553,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount) clamped between 0 and 1
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_mixc(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_mixc(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief threshold function
@@ -562,7 +562,7 @@ extension cglm
 	 * @param[in]   x       value to test against threshold
 	 * @param[out]  dest    destination
 	 */
-	[CLink] public static extern void glm_vec3_step(vec3 edge, vec3 x, vec3 dest);
+	[CLink] public static extern void glmc_vec3_step(vec3 edge, vec3 x, vec3 dest);
 
 	/*!
 	 * @brief threshold function with a smooth transition (unidimensional)
@@ -572,7 +572,7 @@ extension cglm
 	 * @param[in]   x       value to test against threshold
 	 * @param[out]  dest    destination
 	 */
-	[CLink] public static extern void glm_vec3_smoothstep_uni(float edge0, float edge1, vec3 x, vec3 dest);
+	[CLink] public static extern void glmc_vec3_smoothstep_uni(float edge0, float edge1, vec3 x, vec3 dest);
 
 	/*!
 	 * @brief threshold function with a smooth transition
@@ -582,7 +582,7 @@ extension cglm
 	 * @param[in]   x       value to test against threshold
 	 * @param[out]  dest    destination
 	 */
-	[CLink] public static extern void glm_vec3_smoothstep(vec3 edge0, vec3 edge1, vec3 x, vec3 dest);
+	[CLink] public static extern void glmc_vec3_smoothstep(vec3 edge0, vec3 edge1, vec3 x, vec3 dest);
 
 	/*!
 	 * @brief smooth Hermite interpolation between two vectors
@@ -594,7 +594,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount)
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_smoothinterp(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_smoothinterp(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief smooth Hermite interpolation between two vectors (clamped)
@@ -606,7 +606,7 @@ extension cglm
 	 * @param[in]   t    interpolant (amount) clamped between 0 and 1
 	 * @param[out]  dest destination
 	 */
-	[CLink] public static extern void glm_vec3_smoothinterpc(vec3 from, vec3 to, float t, vec3 dest);
+	[CLink] public static extern void glmc_vec3_smoothinterpc(vec3 from, vec3 to, float t, vec3 dest);
 
 	/*!
 	 * @brief swizzle vector components
@@ -617,7 +617,7 @@ extension cglm
 	 * @param[in]  mask mask
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_vec3_swizzle(vec3 v, c_int mask, vec3 dest);
+	[CLink] public static extern void glmc_vec3_swizzle(vec3 v, c_int mask, vec3 dest);
 
 	/*!
 	 * @brief vec3 cross product
@@ -628,7 +628,7 @@ extension cglm
 	 * @param[in]  b source 2
 	 * @param[out] d destination
 	 */
-	[CLink] public static extern void glm_cross(vec3 a, vec3 b, vec3 d);
+	[CLink] public static extern void glmc_cross(vec3 a, vec3 b, vec3 d);
 
 	/*!
 	 * @brief vec3 dot product
@@ -640,7 +640,7 @@ extension cglm
 	 *
 	 * @return dot product
 	 */
-	[CLink] public static extern float glm_dot(vec3 a, vec3 b);
+	[CLink] public static extern float glmc_dot(vec3 a, vec3 b);
 
 	/*!
 	 * @brief normalize vec3 and store result in same vec
@@ -649,7 +649,7 @@ extension cglm
 	 *
 	 * @param[in, out] v vector
 	 */
-	[CLink] public static extern void glm_normalize(vec3 v);
+	[CLink] public static extern void glmc_normalize(vec3 v);
 
 	/*!
 	 * @brief normalize vec3 to dest
@@ -659,7 +659,7 @@ extension cglm
 	 * @param[in]  v    source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_normalize_to(vec3 v, vec3 dest);
+	[CLink] public static extern void glmc_normalize_to(vec3 v, vec3 dest);
 
 	/*!
 	 * @brief Create three dimensional vector from pointer
@@ -667,7 +667,7 @@ extension cglm
 	 * @param[in]  src  pointer to an array of floats
 	 * @param[out] dest destination vector
 	 */
-	[CLink] public static extern void glm_vec3_make(float* src, vec3 dest);
+	[CLink] public static extern void glmc_vec3_make(float* src, vec3 dest);
 
 	/*!
 	 * @brief a vector pointing in the same direction as another
@@ -679,7 +679,7 @@ extension cglm
 	 * @param[in] nref   reference vector
 	 * @param[out] dest  oriented vector, pointing away from the surface
 	 */
-	[CLink] public static extern void glm_vec3_faceforward(vec3 n, vec3 v, vec3 nref, vec3 dest);
+	[CLink] public static extern void glmc_vec3_faceforward(vec3 n, vec3 v, vec3 nref, vec3 dest);
 
 	/*!
 	 * @brief reflection vector using an incident ray and a surface normal
@@ -688,7 +688,7 @@ extension cglm
 	 * @param[in]  n    normalized normal vector
 	 * @param[out] dest reflection result
 	 */
-	[CLink] public static extern void glm_vec3_reflect(vec3 v, vec3 n, vec3 dest);
+	[CLink] public static extern void glmc_vec3_reflect(vec3 v, vec3 n, vec3 dest);
 
 	/*!
 	 * @brief computes refraction vector for an incident vector and a surface normal.

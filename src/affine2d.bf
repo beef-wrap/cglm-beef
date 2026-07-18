@@ -19,7 +19,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       v  translate vector [x, y]
 	*/
-	[CLink] public static extern void glm_translate2d(mat3 m, vec2 v);
+	[CLink] public static extern void glmc_translate2d(mat3 m, vec2 v);
 
 	/*!
 	* @brief translate existing 2d transform matrix by v vector
@@ -31,7 +31,7 @@ extension cglm
 	* @param[in]  v    translate vector [x, y]
 	* @param[out] dest translated matrix
 	*/
-	[CLink] public static extern void glm_translate2d_to(mat3 m, vec2 v, mat3 dest);
+	[CLink] public static extern void glmc_translate2d_to(mat3 m, vec2 v, mat3 dest);
 
 	/*!
 	* @brief translate existing 2d transform matrix by x factor
@@ -39,7 +39,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       x  x factor
 	*/
-	[CLink] public static extern void glm_translate2d_x(mat3 m, float x);
+	[CLink] public static extern void glmc_translate2d_x(mat3 m, float x);
 
 	/*!
 	* @brief translate existing 2d transform matrix by y factor
@@ -47,7 +47,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       y  y factor
 	*/
-	[CLink] public static extern void glm_translate2d_y(mat3 m, float y);
+	[CLink] public static extern void glmc_translate2d_y(mat3 m, float y);
 
 	/*!
 	* @brief creates NEW translate 2d transform matrix by v vector
@@ -55,7 +55,7 @@ extension cglm
 	* @param[out]  m  affine transform
 	* @param[in]   v  translate vector [x, y]
 	*/
-	[CLink] public static extern void glm_translate2d_make(mat3 m, vec2 v);
+	[CLink] public static extern void glmc_translate2d_make(mat3 m, vec2 v);
 
 	/*!
 	* @brief scale existing 2d transform matrix by v vector
@@ -65,7 +65,7 @@ extension cglm
 	* @param[in]  v    scale vector [x, y]
 	* @param[out] dest scaled matrix
 	*/
-	[CLink] public static extern void glm_scale2d_to(mat3 m, vec2 v, mat3 dest);
+	[CLink] public static extern void glmc_scale2d_to(mat3 m, vec2 v, mat3 dest);
 
 	/*!
 	* @brief creates NEW 2d scale matrix by v vector
@@ -73,7 +73,7 @@ extension cglm
 	* @param[out]  m  affine transform
 	* @param[in]   v  scale vector [x, y]
 	*/
-	[CLink] public static extern void glm_scale2d_make(mat3 m, vec2 v);
+	[CLink] public static extern void glmc_scale2d_make(mat3 m, vec2 v);
 
 	/*!
 	* @brief scales existing 2d transform matrix by v vector
@@ -82,7 +82,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       v  scale vector [x, y]
 	*/
-	[CLink] public static extern void glm_scale2d(mat3 m, vec2 v);
+	[CLink] public static extern void glmc_scale2d(mat3 m, vec2 v);
 
 	/*!
 	* @brief applies uniform scale to existing 2d transform matrix v = [s, s]
@@ -91,7 +91,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       s  scale factor
 	*/
-	[CLink] public static extern void glm_scale2d_uni(mat3 m, float s);
+	[CLink] public static extern void glmc_scale2d_uni(mat3 m, float s);
 
 	/*!
 	* @brief creates NEW rotation matrix by angle around Z axis
@@ -99,7 +99,7 @@ extension cglm
 	* @param[out] m     affine transform
 	* @param[in]  angle angle (radians)
 	*/
-	[CLink] public static extern void glm_rotate2d_make(mat3 m, float angle);
+	[CLink] public static extern void glmc_rotate2d_make(mat3 m, float angle);
 
 	/*!
 	* @brief rotate existing 2d transform matrix around Z axis by angle
@@ -108,7 +108,7 @@ extension cglm
 	* @param[in, out]  m      affine transform
 	* @param[in]       angle  angle (radians)
 	*/
-	[CLink] public static extern void glm_rotate2d(mat3 m, float angle);
+	[CLink] public static extern void glmc_rotate2d(mat3 m, float angle);
 
 	/*!
 	* @brief rotate existing 2d transform matrix around Z axis by angle
@@ -118,5 +118,5 @@ extension cglm
 	* @param[in]  angle  angle (radians)
 	* @param[out] dest   destination
 	*/
-	[CLink] public static extern void glm_rotate2d_to(mat3 m, float angle, mat3 dest);
+	[CLink] public static extern void glmc_rotate2d_to(mat3 m, float angle, mat3 dest);
 }

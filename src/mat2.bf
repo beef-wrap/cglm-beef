@@ -37,7 +37,7 @@ extension cglm
 	 * @param[in]  mat  source
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_mat2_copy(mat2 mat, mat2 dest);
+	[CLink] public static extern void glmc_mat2_copy(mat2 mat, mat2 dest);
 
 	/*!
 	 * @brief make given matrix identity. It is identical with below,
@@ -53,7 +53,7 @@ extension cglm
 	 *
 	 * @param[in, out]  mat  destination
 	 */
-	[CLink] public static extern void glm_mat2_identity(mat2 mat);
+	[CLink] public static extern void glmc_mat2_identity(mat2 mat);
 
 	/*!
 	 * @brief make given matrix array's each element identity matrix
@@ -63,14 +63,14 @@ extension cglm
 	 *
 	 * @param[in]       count count of matrices
 	 */
-	[CLink] public static extern void glm_mat2_identity_array(mat2* mat, size_t count);
+	[CLink] public static extern void glmc_mat2_identity_array(mat2* mat, size_t count);
 
 	/*!
 	 * @brief make given matrix zero.
 	 *
 	 * @param[in, out]  mat  matrix
 	 */
-	[CLink] public static extern void glm_mat2_zero(mat2 mat);
+	[CLink] public static extern void glmc_mat2_zero(mat2 mat);
 
 	/*!
 	 * @brief multiply m1 and m2 to dest
@@ -86,7 +86,7 @@ extension cglm
 	 * @param[in]  m2   right matrix
 	 * @param[out] dest destination matrix
 	 */
-	[CLink] public static extern void glm_mat2_mul(mat2 m1, mat2 m2, mat2 dest);
+	[CLink] public static extern void glmc_mat2_mul(mat2 m1, mat2 m2, mat2 dest);
 
 	/*!
 	 * @brief transpose mat2 and store in dest
@@ -96,14 +96,14 @@ extension cglm
 	 * @param[in]  m     matrix
 	 * @param[out] dest  result
 	 */
-	[CLink] public static extern void glm_mat2_transpose_to(mat2 m, mat2 dest);
+	[CLink] public static extern void glmc_mat2_transpose_to(mat2 m, mat2 dest);
 
 	/*!
 	 * @brief transpose mat2 and store result in same matrix
 	 *
 	 * @param[in, out] m source and dest
 	 */
-	[CLink] public static extern void glm_mat2_transpose(mat2 m);
+	[CLink] public static extern void glmc_mat2_transpose(mat2 m);
 
 	/*!
 	 * @brief multiply mat2 with vec2 (column vector) and store in dest vector
@@ -112,7 +112,7 @@ extension cglm
 	 * @param[in]  v    vec2 (right, column vector)
 	 * @param[out] dest vec2 (result, column vector)
 	 */
-	[CLink] public static extern void glm_mat2_mulv(mat2 m, vec2 v, vec2 dest);
+	[CLink] public static extern void glmc_mat2_mulv(mat2 m, vec2 v, vec2 dest);
 
 	/*!
 	 * @brief trace of matrix
@@ -121,7 +121,7 @@ extension cglm
 	 *
 	 * @param[in]  m matrix
 	 */
-	[CLink] public static extern float glm_mat2_trace(mat2 m);
+	[CLink] public static extern float glmc_mat2_trace(mat2 m);
 
 	/*!
 	 * @brief scale (multiply with scalar) matrix
@@ -131,7 +131,7 @@ extension cglm
 	 * @param[in, out] m matrix
 	 * @param[in]      s scalar
 	 */
-	[CLink] public static extern void glm_mat2_scale(mat2 m, float s);
+	[CLink] public static extern void glmc_mat2_scale(mat2 m, float s);
 
 	/*!
 	 * @brief mat2 determinant
@@ -140,7 +140,7 @@ extension cglm
 	 *
 	 * @return determinant
 	 */
-	[CLink] public static extern float glm_mat2_det(mat2 mat);
+	[CLink] public static extern float glmc_mat2_det(mat2 mat);
 
 	/*!
 	 * @brief inverse mat2 and store in dest
@@ -148,7 +148,7 @@ extension cglm
 	 * @param[in]  mat  matrix
 	 * @param[out] dest inverse matrix
 	 */
-	[CLink] public static extern void glm_mat2_inv(mat2 mat, mat2 dest);
+	[CLink] public static extern void glmc_mat2_inv(mat2 mat, mat2 dest);
 
 	/*!
 	 * @brief swap two matrix columns
@@ -157,7 +157,7 @@ extension cglm
 	 * @param[in]     col1 col1
 	 * @param[in]     col2 col2
 	 */
-	[CLink] public static extern void glm_mat2_swap_col(mat2 mat, c_int col1, c_int col2);
+	[CLink] public static extern void glmc_mat2_swap_col(mat2 mat, c_int col1, c_int col2);
 
 	/*!
 	 * @brief swap two matrix rows
@@ -166,7 +166,7 @@ extension cglm
 	 * @param[in]     row1 row1
 	 * @param[in]     row2 row2
 	 */
-	[CLink] public static extern void glm_mat2_swap_row(mat2 mat, c_int row1, c_int row2);
+	[CLink] public static extern void glmc_mat2_swap_row(mat2 mat, c_int row1, c_int row2);
 
 	/*!
 	 * @brief helper for  R (row vector) * M (matrix) * C (column vector)
@@ -182,7 +182,7 @@ extension cglm
 	 *
 	 * @return scalar value e.g. Matrix1x1
 	 */
-	[CLink] public static extern float glm_mat2_rmc(vec2 r, mat2 m, vec2 c);
+	[CLink] public static extern float glmc_mat2_rmc(vec2 r, mat2 m, vec2 c);
 
 	/*!
 	 * @brief Create mat2 matrix from pointer
@@ -190,5 +190,5 @@ extension cglm
 	 * @param[in]  src  pointer to an array of floats
 	 * @param[out] dest matrix
 	 */
-	[CLink] public static extern void glm_mat2_make(float* src, mat2 dest);
+	[CLink] public static extern void glmc_mat2_make(float* src, mat2 dest);
 }

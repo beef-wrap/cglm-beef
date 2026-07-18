@@ -21,7 +21,7 @@ extension cglm
 	 * @param[in]  v4   vector4
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3(ivec4 v4, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3(ivec4 v4, ivec3 dest);
 
 	/*!
 	 * @brief copy all members of [a] to [dest]
@@ -29,7 +29,7 @@ extension cglm
 	 * @param[in]  a    source vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_copy(ivec3 a, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_copy(ivec3 a, ivec3 dest);
 
 	/*!
 	 * @brief set all members of [v] to zero
@@ -43,7 +43,7 @@ extension cglm
 	 *
 	 * @param[out] v vector
 	 */
-	[CLink] public static extern void glm_ivec3_one(ivec3 v);
+	[CLink] public static extern void glmc_ivec3_one(ivec3 v);
 
 	/*!
 	 * @brief ivec3 dot product
@@ -85,7 +85,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_add(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_add(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief add scalar s to vector [v] and store result in [dest]
@@ -94,7 +94,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_adds(ivec3 v, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_adds(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief subtract vector [b] from vector [a] and store result in [dest]
@@ -103,7 +103,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_sub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_sub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief subtract scalar s from vector [v] and store result in [dest]
@@ -112,7 +112,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_subs(ivec3 v, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_subs(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] with vector [b] and store result in [dest]
@@ -121,7 +121,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_mul(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_mul(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] with scalar s and store result in [dest]
@@ -130,7 +130,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_scale(ivec3 v, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_scale(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief div vector with another component-wise division: d = a / b
@@ -139,7 +139,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest result = (a[0]/b[0], a[1]/b[1], a[2]/b[2])
 	 */
-	[CLink] public static extern void glm_ivec3_div(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_div(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief div vector with scalar: d = v / s
@@ -148,7 +148,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest result = (a[0]/s, a[1]/s, a[2]/s)
 	 */
-	[CLink] public static extern void glm_ivec3_divs(ivec3 v, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_divs(ivec3 v, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief Element-wise modulo operation on ivec3 vectors: dest = a % b
@@ -159,7 +159,7 @@ extension cglm
 	 * @param[in]  b    vector 2
 	 * @param[out] dest result = (a[0]%b[0], a[1]%b[1], a[2]%b[2])
 	 */
-	[CLink] public static extern void glm_ivec3_mod(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_mod(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief add vector [a] with vector [b] and add result to vector [dest]
@@ -242,7 +242,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest dest += max(a, b)
 	 */
-	[CLink] public static extern void glm_ivec3_maxadd(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_maxadd(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief add minimum of vector [a] and vector [b] to vector [dest]
@@ -253,7 +253,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest dest += min(a, b)
 	 */
-	[CLink] public static extern void glm_ivec3_minadd(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_minadd(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief subtract vector [a] from vector [b] and subtract result from [dest]
@@ -264,7 +264,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest dest -= (a - b)
 	 */
-	[CLink] public static extern void glm_ivec3_subsub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_subsub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief subtract scalar [s] from vector [a] and subtract result from [dest]
@@ -275,7 +275,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a - s)
 	 */
-	[CLink] public static extern void glm_ivec3_subsubs(ivec3 a, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_subsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief add vector [a] to vector [b] and subtract the result from [dest]
@@ -286,7 +286,7 @@ extension cglm
 	 * @param[in]  b    scalar
 	 * @param[out] dest dest -= (a + b)
 	 */
-	[CLink] public static extern void glm_ivec3_addsub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_addsub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief add scalar [s] to vector [a] and subtract the result from [dest]
@@ -297,7 +297,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a + b)
 	 */
-	[CLink] public static extern void glm_ivec3_addsubs(ivec3 a, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_addsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] and vector [b] and subtract the result from [dest]
@@ -308,7 +308,7 @@ extension cglm
 	 * @param[in]  b    scalar
 	 * @param[out] dest dest -= (a * b)
 	 */
-	[CLink] public static extern void glm_ivec3_mulsub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_mulsub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief multiply vector [a] with scalar [s] and subtract the result from [dest]
@@ -319,7 +319,7 @@ extension cglm
 	 * @param[in]  s    scalar
 	 * @param[out] dest dest -= (a * s)
 	 */
-	[CLink] public static extern void glm_ivec3_mulsubs(ivec3 a, c_int s, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_mulsubs(ivec3 a, c_int s, ivec3 dest);
 
 	/*!
 	 * @brief subtract maximum of vector [a] and vector [b] from vector [dest]
@@ -330,7 +330,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest dest -= max(a, b)
 	 */
-	[CLink] public static extern void glm_ivec3_maxsub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_maxsub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief subtract minimum of vector [a] and vector [b] from vector [dest]
@@ -341,7 +341,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest dest -= min(a, b)
 	 */
-	[CLink] public static extern void glm_ivec3_minsub(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_minsub(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief squared distance between two vectors
@@ -350,7 +350,7 @@ extension cglm
 	 * @param[in] b second vector
 	 * @return returns squared distance (distance * distance)
 	 */
-	[CLink] public static extern c_int glm_ivec3_distance2(ivec3 a, ivec3 b);
+	[CLink] public static extern c_int glmc_ivec3_distance2(ivec3 a, ivec3 b);
 
 	/*!
 	 * @brief distance between two vectors
@@ -359,7 +359,7 @@ extension cglm
 	 * @param[in] b second vector
 	 * @return returns distance
 	 */
-	[CLink] public static extern float glm_ivec3_distance(ivec3 a, ivec3 b);
+	[CLink] public static extern float glmc_ivec3_distance(ivec3 a, ivec3 b);
 
 	/*!
 	 * @brief fill a vector with specified value
@@ -367,7 +367,7 @@ extension cglm
 	 * @param[out] v   dest
 	 * @param[in]  val value
 	 */
-	[CLink] public static extern void glm_ivec3_fill(ivec3 v, c_int val);
+	[CLink] public static extern void glmc_ivec3_fill(ivec3 v, c_int val);
 
 	/*!
 	 * @brief check if vector is equal to value
@@ -392,7 +392,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_maxv(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_maxv(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief set each member of dest to lesser of vector a and b
@@ -401,7 +401,7 @@ extension cglm
 	 * @param[in]  b    second vector
 	 * @param[out] dest destination
 	 */
-	[CLink] public static extern void glm_ivec3_minv(ivec3 a, ivec3 b, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_minv(ivec3 a, ivec3 b, ivec3 dest);
 
 	/*!
 	 * @brief clamp each member of [v] between minVal and maxVal (inclusive)
@@ -410,7 +410,7 @@ extension cglm
 	 * @param[in]      minVal minimum value
 	 * @param[in]      maxVal maximum value
 	 */
-	[CLink] public static extern void glm_ivec3_clamp(ivec3 v, c_int minVal, c_int maxVal);
+	[CLink] public static extern void glmc_ivec3_clamp(ivec3 v, c_int minVal, c_int maxVal);
 
 	/*!
 	 * @brief absolute value of v
@@ -418,7 +418,7 @@ extension cglm
 	 * @param[in]	v	vector
 	 * @param[out]	dest	destination
 	 */
-	[CLink] public static extern void glm_ivec3_abs(ivec3 v, ivec3 dest);
+	[CLink] public static extern void glmc_ivec3_abs(ivec3 v, ivec3 dest);
 
 
 }

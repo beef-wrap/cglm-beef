@@ -55,5 +55,5 @@ extension cglm
 	 * @param[in]  t     parameter
 	 * @param[out] point point at t
 	 */
-	[CLink] public static extern void glm_ray_at(vec3 orig, vec3 dir, float t, vec3 point);
+	[CLink] public static extern void glmc_ray_at(vec3 orig, vec3 dir, float t, vec3 point);
 }

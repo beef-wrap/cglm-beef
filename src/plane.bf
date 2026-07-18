@@ -23,5 +23,5 @@ extension cglm
 	 *
 	 * @param[in, out] plane plane to normalize
 	 */
-	[CLink] public static extern void glm_plane_normalize(vec4 plane);
+	[CLink] public static extern void glmc_plane_normalize(vec4 plane);
 }

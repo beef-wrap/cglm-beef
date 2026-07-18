@@ -28,7 +28,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       v  translate vector [x, y, z]
 	*/
-	[CLink] public static extern void glm_translated(mat4 m, vec3 v);
+	[CLink] public static extern void glmc_translated(mat4 m, vec3 v);
 
 	/*!
 	* @brief translate existing transform matrix by v vector
@@ -42,7 +42,7 @@ extension cglm
 	* @param[in]  v    translate vector [x, y, z]
 	* @param[out] dest translated matrix
 	*/
-	[CLink] public static extern void glm_translated_to(mat4 m, vec3 v, mat4 dest);
+	[CLink] public static extern void glmc_translated_to(mat4 m, vec3 v, mat4 dest);
 
 	/*!
 	* @brief translate existing transform matrix by x factor
@@ -52,7 +52,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       x  x factor
 	*/
-	[CLink] public static extern void glm_translated_x(mat4 m, float x);
+	[CLink] public static extern void glmc_translated_x(mat4 m, float x);
 
 	/*!
 	* @brief translate existing transform matrix by y factor
@@ -62,7 +62,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       y  y factor
 	*/
-	[CLink] public static extern void glm_translated_y(mat4 m, float y);
+	[CLink] public static extern void glmc_translated_y(mat4 m, float y);
 
 	/*!
 	* @brief translate existing transform matrix by z factor
@@ -72,7 +72,7 @@ extension cglm
 	* @param[in, out]  m  affine transform
 	* @param[in]       z  z factor
 	*/
-	[CLink] public static extern void glm_translated_z(mat4 m, float z);
+	[CLink] public static extern void glmc_translated_z(mat4 m, float z);
 
 	/*!
 	* @brief rotate existing transform matrix around X axis by angle
@@ -84,7 +84,7 @@ extension cglm
 	* @param[in]   angle  angle (radians)
 	* @param[out]  dest   rotated matrix
 	*/
-	[CLink] public static extern void glm_rotated_x(mat4 m, float angle, mat4 dest);
+	[CLink] public static extern void glmc_rotated_x(mat4 m, float angle, mat4 dest);
 
 	/*!
 	* @brief rotate existing transform matrix around Y axis by angle
@@ -96,7 +96,7 @@ extension cglm
 	* @param[in]   angle  angle (radians)
 	* @param[out]  dest   rotated matrix
 	*/
-	[CLink] public static extern void glm_rotated_y(mat4 m, float angle, mat4 dest);
+	[CLink] public static extern void glmc_rotated_y(mat4 m, float angle, mat4 dest);
 
 	/*!
 	* @brief rotate existing transform matrix around Z axis by angle
@@ -108,7 +108,7 @@ extension cglm
 	* @param[in]   angle  angle (radians)
 	* @param[out]  dest   rotated matrix
 	*/
-	[CLink] public static extern void glm_rotated_z(mat4 m, float angle, mat4 dest);
+	[CLink] public static extern void glmc_rotated_z(mat4 m, float angle, mat4 dest);
 
 	/*!
 	* @brief rotate existing transform matrix around given axis by angle
@@ -119,7 +119,7 @@ extension cglm
 	* @param[in]       angle  angle (radians)
 	* @param[in]       axis   axis
 	*/
-	[CLink] public static extern void glm_rotated(mat4 m, float angle, vec3 axis);
+	[CLink] public static extern void glmc_rotated(mat4 m, float angle, vec3 axis);
 
 	/*!
 	* @brief rotate existing transform
@@ -132,7 +132,7 @@ extension cglm
 	* @param[in]       angle  angle (radians)
 	* @param[in]       axis   axis
 	*/
-	[CLink] public static extern void glm_rotated_at(mat4 m, vec3 pivot, float angle, vec3 axis);
+	[CLink] public static extern void glmc_rotated_at(mat4 m, vec3 pivot, float angle, vec3 axis);
 
 	/*!
 	* @brief rotate existing transform matrix around given axis by angle around self (doesn't affected by position)
@@ -143,5 +143,5 @@ extension cglm
 	* @param[in]       angle  angle (radians)
 	* @param[in]       axis   axis
 	*/
-	[CLink] public static extern void glm_spinned(mat4 m, float angle, vec3 axis);
+	[CLink] public static extern void glmc_spinned(mat4 m, float angle, vec3 axis);
 }

@@ -1,0 +1,17 @@
+.{
+    .name = .cglm_beef,
+    .version = "0.0.0",
+    .fingerprint = 0x789e0fae9edef155,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/recp/cglm#6e2976d415e96659b8045c727440aa261695215e",
+            .hash = "N-V-__8AADM_JACt9277GveWaVJMDD2tqQgk0yi2lMPakSBX",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

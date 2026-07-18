@@ -31,7 +31,7 @@ extension cglm
 	 * @param[in]  point  4D vector
 	 * @returns           perlin noise value
 	 */
-	[CLink] public static extern float glm_perlin_vec4(vec4 point);
+	[CLink] public static extern float glmc_perlin_vec4(vec4 point);
 
 
 	/*!
@@ -40,7 +40,7 @@ extension cglm
 	 * @param[in]  point  3D vector
 	 * @returns           perlin noise value
 	 */
-	[CLink] public static extern float glm_perlin_vec3(vec3 point);
+	[CLink] public static extern float glmc_perlin_vec3(vec3 point);
 
 	/*!
 	 * @brief Classic perlin noise
@@ -48,5 +48,5 @@ extension cglm
 	 * @param[in]  point  2D vector
 	 * @returns           perlin noise value
 	 */
-	[CLink] public static extern float glm_perlin_vec2(vec2 point);
+	[CLink] public static extern float glmc_perlin_vec2(vec2 point);
 }

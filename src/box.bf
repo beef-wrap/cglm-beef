@@ -19,19 +19,19 @@ extension cglm
 	 * @param[in]  m    transform matrix
 	 * @param[out] dest transformed bounding box
 	 */
-	[CLink] public static extern void glm_aabb_transform(vec3[2] box_, mat4 m, vec3[2] dest);
+	[CLink] public static extern void glmc_aabb_transform(vec3[2] box_, mat4 m, vec3[2] dest);
 
 	/*!
 	 * @brief merges two AABB bounding box and creates new one
 	 *
 	 * two box must be in same space, if one of box is in different space then
-	 * you should consider to convert it's space by glm_box_space
+	 * you should consider to convert it's space by glmc_box_space
 	 *
 	 * @param[in]  box1 bounding box 1
 	 * @param[in]  box2 bounding box 2
 	 * @param[out] dest merged bounding box
 	 */
-	[CLink] public static extern void glm_aabb_merge(vec3[2] box_1, vec3[2] box_2, vec3[2] dest);
+	[CLink] public static extern void glmc_aabb_merge(vec3[2] box_1, vec3[2] box_2, vec3[2] dest);
 
 	/*!
 	 * @brief crops a bounding box with another one.
@@ -44,7 +44,7 @@ extension cglm
 	 * @param[in]  cropBox crop box
 	 * @param[out] dest    cropped bounding box
 	 */
-	[CLink] public static extern void glm_aabb_crop(vec3[2] box_, vec3[2] cropBox, vec3[2] dest);
+	[CLink] public static extern void glmc_aabb_crop(vec3[2] box_, vec3[2] cropBox, vec3[2] dest);
 
 	/*!
 	 * @brief crops a bounding box with another one.
@@ -58,7 +58,7 @@ extension cglm
 	 * @param[in]  clampBox minimum box
 	 * @param[out] dest     cropped bounding box
 	 */
-	[CLink] public static extern void glm_aabb_crop_until(vec3[2] box_, vec3[2] cropBox, vec3[2] clampBox, vec3[2] dest);
+	[CLink] public static extern void glmc_aabb_crop_until(vec3[2] box_, vec3[2] cropBox, vec3[2] clampBox, vec3[2] dest);
 
 	/*!
 	 * @brief check if AABB intersects with frustum planes
@@ -74,35 +74,35 @@ extension cglm
 	 * @param[in]  box     bounding box
 	 * @param[in]  planes  frustum planes
 	 */
-	[CLink] public static extern bool glm_aabb_frustum(vec3[2] box_, vec4[6] planes);
+	[CLink] public static extern bool glmc_aabb_frustum(vec3[2] box_, vec4[6] planes);
 
 	/*!
 	 * @brief invalidate AABB min and max values
 	 *
 	 * @param[in, out]  box bounding box
 	 */
-	[CLink] public static extern void glm_aabb_invalidate(vec3[2] box_);
+	[CLink] public static extern void glmc_aabb_invalidate(vec3[2] box_);
 
 	/*!
 	 * @brief check if AABB is valid or not
 	 *
 	 * @param[in]  box bounding box
 	 */
-	[CLink] public static extern bool glm_aabb_isvalid(vec3[2] box_);
+	[CLink] public static extern bool glmc_aabb_isvalid(vec3[2] box_);
 
 	/*!
 	 * @brief distance between of min and max
 	 *
 	 * @param[in]  box bounding box
 	 */
-	[CLink] public static extern float glm_aabb_size(vec3[2] box_);
+	[CLink] public static extern float glmc_aabb_size(vec3[2] box_);
 
 	/*!
 	 * @brief radius of sphere which surrounds AABB
 	 *
 	 * @param[in]  box bounding box
 	 */
-	[CLink] public static extern float glm_aabb_radius(vec3[2] box_);
+	[CLink] public static extern float glmc_aabb_radius(vec3[2] box_);
 
 
 	/*!
@@ -111,7 +111,7 @@ extension cglm
 	 * @param[in]   box  bounding box
 	 * @param[out]  dest center of bounding box
 	 */
-	[CLink] public static extern void glm_aabb_center(vec3[2] box_, vec3 dest);
+	[CLink] public static extern void glmc_aabb_center(vec3[2] box_, vec3 dest);
 
 	/*!
 	 * @brief check if two AABB intersects
@@ -119,7 +119,7 @@ extension cglm
 	 * @param[in]   box    bounding box
 	 * @param[in]   other  other bounding box
 	 */
-	[CLink] public static extern bool glm_aabb_aabb(vec3[2] box_, vec3[2] other);
+	[CLink] public static extern bool glmc_aabb_aabb(vec3[2] box_, vec3[2] other);
 
 	/*!
 	 * @brief check if AABB intersects with sphere
@@ -132,7 +132,7 @@ extension cglm
 	 * @param[in]   box    solid bounding box
 	 * @param[in]   s      solid sphere
 	 */
-	[CLink] public static extern bool glm_aabb_sphere(vec3[2] box_, vec4 s);
+	[CLink] public static extern bool glmc_aabb_sphere(vec3[2] box_, vec4 s);
 
 	/*!
 	 * @brief check if point is inside of AABB
@@ -140,7 +140,7 @@ extension cglm
 	 * @param[in]   box    bounding box
 	 * @param[in]   point  point
 	 */
-	[CLink] public static extern bool glm_aabb_point(vec3[2] box_, vec3 point);
+	[CLink] public static extern bool glmc_aabb_point(vec3[2] box_, vec3 point);
 
 	/*!
 	* @brief check if AABB contains other AABB
@@ -148,5 +148,5 @@ extension cglm
 	* @param[in]   box    bounding box
 	* @param[in]   other  other bounding box
 	*/
-	[CLink] public static extern bool glm_aabb_contains(vec3[2] box_, vec3[2] other);
+	[CLink] public static extern bool glmc_aabb_contains(vec3[2] box_, vec3[2] other);
 }

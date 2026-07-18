@@ -29,5 +29,5 @@ extension cglm
 	 *
 	 * @return B(s)
 	 */
-	[CLink] public static extern float glm_smc(float s, mat4 m, vec4 c);
+	[CLink] public static extern float glmc_smc(float s, mat4 m, vec4 c);
 }

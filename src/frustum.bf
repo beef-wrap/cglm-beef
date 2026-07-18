@@ -64,7 +64,7 @@ extension cglm
 	 * @param[in]  m    matrix (see brief)
 	 * @param[out] dest extracted view frustum planes (see brief)
 	 */
-	[CLink] public static extern void glm_frustum_planes(mat4 m, vec4[6] dest);
+	[CLink] public static extern void glmc_frustum_planes(mat4 m, vec4[6] dest);
 
 	/*!
 	 * @brief extracts view frustum corners using clip-space coordinates
@@ -89,7 +89,7 @@ extension cglm
 	 * @param[in]  invMat matrix (see brief)
 	 * @param[out] dest   exracted view frustum corners (see brief)
 	 */
-	[CLink] public static extern void glm_frustum_corners(mat4 invMat, vec4[8] dest);
+	[CLink] public static extern void glmc_frustum_corners(mat4 invMat, vec4[8] dest);
 
 	/*!
 	 * @brief finds center of view frustum
@@ -97,7 +97,7 @@ extension cglm
 	 * @param[in]  corners view frustum corners
 	 * @param[out] dest    view frustum center
 	 */
-	[CLink] public static extern void glm_frustum_center(vec4[8] corners, vec4 dest);
+	[CLink] public static extern void glmc_frustum_center(vec4[8] corners, vec4 dest);
 
 	/*!
 	 * @brief finds bounding box of frustum relative to given matrix e.g. view mat
@@ -106,7 +106,7 @@ extension cglm
 	 * @param[in]  m       matrix to convert existing conners
 	 * @param[out] box     bounding box as array [min, max]
 	 */
-	[CLink] public static extern void glm_frustum_box(vec4[8] corners, mat4 m, vec3[2] box_);
+	[CLink] public static extern void glmc_frustum_box(vec4[8] corners, mat4 m, vec3[2] box_);
 
 	/*!
 	 * @brief finds planes corners which is between near and far planes (parallel)
@@ -120,5 +120,5 @@ extension cglm
 	 * @param[in]  farDist       far distance (zFar)
 	 * @param[out] planeCorners  plane corners [LB, LT, RT, RB]
 	 */
-	[CLink] public static extern void glm_frustum_corners_at(vec4[8] corners, float splitDist, float farDist, vec4[4] planeCorners);
+	[CLink] public static extern void glmc_frustum_corners_at(vec4[8] corners, float splitDist, float farDist, vec4[4] planeCorners);
 }

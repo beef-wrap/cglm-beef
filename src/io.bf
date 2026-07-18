@@ -62,36 +62,36 @@ extension cglm
 	*
 	* @param[in] ostream    stream to print e.g. stdout, stderr, FILE ...
 	*/
-	[CLink] public static extern void glm_arch_print(FILE* ostream);
+	[CLink] public static extern void glmc_arch_print(FILE* ostream);
 
 	/*!
 	* @brief prints current SIMD path in general
 	*
 	* @param[in] ostream    stream to print e.g. stdout, stderr, FILE ...
 	*/
-	[CLink] public static extern void glm_arch_print_name(FILE* ostream);
+	[CLink] public static extern void glmc_arch_print_name(FILE* ostream);
 
-	[CLink] public static extern void glm_mat4_print(mat4 matrix, FILE* ostream);
+	[CLink] public static extern void glmc_mat4_print(mat4 matrix, FILE* ostream);
 
-	[CLink] public static extern void glm_mat3_print(mat3 matrix, FILE* ostream);
+	[CLink] public static extern void glmc_mat3_print(mat3 matrix, FILE* ostream);
 
-	[CLink] public static extern void glm_mat2_print(mat2 matrix, FILE* ostream);
+	[CLink] public static extern void glmc_mat2_print(mat2 matrix, FILE* ostream);
 
-	[CLink] public static extern void glm_vec4_print(vec4 vec, FILE* ostream);
+	[CLink] public static extern void glmc_vec4_print(vec4 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_ivec4_print(ivec4 vec, FILE* ostream);
+	[CLink] public static extern void glmc_ivec4_print(ivec4 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_vec3_print(vec3 vec, FILE* ostream);
+	[CLink] public static extern void glmc_vec3_print(vec3 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_ivec3_print(ivec3 vec, FILE* ostream);
+	[CLink] public static extern void glmc_ivec3_print(ivec3 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_vec2_print(vec2 vec, FILE* ostream);
+	[CLink] public static extern void glmc_vec2_print(vec2 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_ivec2_print(ivec2 vec, FILE* ostream);
+	[CLink] public static extern void glmc_ivec2_print(ivec2 vec, FILE* ostream);
 
-	[CLink] public static extern void glm_versor_print(versor vec, FILE* ostream);
+	[CLink] public static extern void glmc_versor_print(versor vec, FILE* ostream);
 
-	[CLink] public static extern void glm_aabb_print(vec3[2] bbox, char* tag, FILE* ostream);
+	[CLink] public static extern void glmc_aabb_print(vec3[2] bbox, char* tag, FILE* ostream);
 
 	/* NOOP: Remove print from DEBUG */
 	// #define glm_mat4_print(v, s) (void)v; (void)s;

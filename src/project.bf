@@ -49,7 +49,7 @@ extension cglm
 	 * @param[in]  vp       viewport as [x, y, width, height]
 	 * @param[out] dest     unprojected coordinates
 	 */
-	[CLink] public static extern void glm_unprojecti(vec3 pos, mat4 invMat, vec4 vp, vec3 dest);
+	[CLink] public static extern void glmc_unprojecti(vec3 pos, mat4 invMat, vec4 vp, vec3 dest);
 
 	/*!
 	 * @brief maps the specified viewport coordinates into specified space [1]
@@ -75,7 +75,7 @@ extension cglm
 	 * @param[in]  vp       viewport as [x, y, width, height]
 	 * @param[out] dest     unprojected coordinates
 	 */
-	[CLink] public static extern void glm_unproject(vec3 pos, mat4 m, vec4 vp, vec3 dest);
+	[CLink] public static extern void glmc_unproject(vec3 pos, mat4 m, vec4 vp, vec3 dest);
 
 	/*!
 	 * @brief map object coordinates to window coordinates
@@ -89,7 +89,7 @@ extension cglm
 	 * @param[in]  vp       viewport as [x, y, width, height]
 	 * @param[out] dest     projected coordinates
 	 */
-	[CLink] public static extern void glm_project(vec3 pos, mat4 m, vec4 vp, vec3 dest);
+	[CLink] public static extern void glmc_project(vec3 pos, mat4 m, vec4 vp, vec3 dest);
 
 	/*!
 	 * @brief map object's z coordinate to window coordinates
@@ -103,7 +103,7 @@ extension cglm
 	 *
 	 * @returns projected z coordinate
 	 */
-	[CLink] public static extern float glm_project_z(vec3 v, mat4 m);
+	[CLink] public static extern float glmc_project_z(vec3 v, mat4 m);
 
 	/*!
 	 * @brief define a picking region
@@ -113,5 +113,5 @@ extension cglm
 	 * @param[in]  vp       viewport as [x, y, width, height]
 	 * @param[out] dest     projected coordinates
 	 */
-	[CLink] public static extern void glm_pickmatrix(vec2 center, vec2 size, vec4 vp, mat4 dest);
+	[CLink] public static extern void glmc_pickmatrix(vec2 center, vec2 size, vec4 vp, mat4 dest);
 }

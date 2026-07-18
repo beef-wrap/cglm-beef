@@ -7,7 +7,46 @@ StartupObject = "cglm.Program"
 DefaultNamespace = "cglm"
 
 [Configs.Debug.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\cglm_d.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\cglm_d.lib"]
+
+[Configs.Debug.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\cglm_d.lib"]
+
+[Configs.Debug.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libcglm_d.a"]
+
+[Configs.Debug.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libcglm_d.a"]
+
+[Configs.Debug.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libcglm_d.a"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\cglm.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\cglm.lib"]
+
+[Configs.Release.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\cglm.lib"]
+
+[Configs.Release.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libcglm.a"]
+
+[Configs.Release.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libcglm.a"]
+
+[Configs.Release.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libcglm.a"]
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\cglm_d.lib"]
+
+[Configs.Test.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\cglm_d.lib"]
+
+[Configs.Test.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libcglm_d.a"]
+
+[Configs.Test.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libcglm_d.a"]
+
+[Configs.Test.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libcglm_d.a"]

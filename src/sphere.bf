@@ -26,7 +26,7 @@ extension cglm
 	 *
 	 * @return returns radii
 	 */
-	[CLink] public static extern float glm_sphere_radii(vec4 s);
+	[CLink] public static extern float glmc_sphere_radii(vec4 s);
 
 	/*!
 	 * @brief apply transform to sphere, it is just wrapper for glm_mat4_mulv3
@@ -35,7 +35,7 @@ extension cglm
 	 * @param[in]  m    transform matrix
 	 * @param[out] dest transformed sphere
 	 */
-	[CLink] public static extern void glm_sphere_transform(vec4 s, mat4 m, vec4 dest);
+	[CLink] public static extern void glmc_sphere_transform(vec4 s, mat4 m, vec4 dest);
 
 	/*!
 	 * @brief merges two spheres and creates a new one
@@ -47,7 +47,7 @@ extension cglm
 	 * @param[in]  s2   sphere 2
 	 * @param[out] dest merged/extended sphere
 	 */
-	[CLink] public static extern void glm_sphere_merge(vec4 s1, vec4 s2, vec4 dest);
+	[CLink] public static extern void glmc_sphere_merge(vec4 s1, vec4 s2, vec4 dest);
 
 	/*!
 	 * @brief check if two sphere intersects

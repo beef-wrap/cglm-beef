@@ -49,7 +49,7 @@ extension cglm
 	*
 	* @return B(s)
 	*/
-	[CLink] public static extern float glm_bezier(float s, float p0, float c0, float c1, float p1);
+	[CLink] public static extern float glmc_bezier(float s, float p0, float c0, float c1, float p1);
 
 	/*!
 	* @brief cubic hermite interpolation
@@ -71,7 +71,7 @@ extension cglm
 	*
 	* @return H(s)
 	*/
-	[CLink] public static extern float glm_hermite(float s, float p0, float t0, float t1, float p1);
+	[CLink] public static extern float glmc_hermite(float s, float p0, float t0, float t1, float p1);
 
 	/*!
 	* @brief iterative way to solve cubic equation
@@ -84,5 +84,5 @@ extension cglm
 	*
 	* @return parameter to use in cubic equation
 	*/
-	[CLink] public static extern float glm_decasteljau(float prm, float p0, float c0, float c1, float p1);
+	[CLink] public static extern float glmc_decasteljau(float prm, float p0, float c0, float c1, float p1);
 }

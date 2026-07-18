@@ -17,5 +17,5 @@ extension cglm
 	 *
 	 * @param[in]  rgb RGB color
 	 */
-	[CLink] public static extern float glm_luminance(vec3 rgb);
+	[CLink] public static extern float glmc_luminance(vec3 rgb);
 }

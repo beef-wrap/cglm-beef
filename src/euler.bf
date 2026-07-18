@@ -81,7 +81,7 @@ extension cglm
 	* @param[in]  m    affine transform
 	* @param[out] dest angles vector [x, y, z]
 	*/
-	[CLink] public static extern void glm_euler_angles(mat4 m, vec3 dest);
+	[CLink] public static extern void glmc_euler_angles(mat4 m, vec3 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -89,7 +89,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_xyz(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_xyz(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -97,7 +97,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -105,7 +105,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_xzy(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_xzy(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -113,7 +113,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_yxz(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_yxz(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -121,7 +121,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_yzx(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_yzx(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -129,7 +129,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_zxy(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_zxy(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -137,7 +137,7 @@ extension cglm
 	* @param[in]  angles angles as vector [Xangle, Yangle, Zangle]
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_zyx(vec3 angles, mat4 dest);
+	[CLink] public static extern void glmc_euler_zyx(vec3 angles, mat4 dest);
 
 	/*!
 	* @brief build rotation matrix from euler angles
@@ -146,7 +146,7 @@ extension cglm
 	* @param[in]  ord    euler order
 	* @param[out] dest   rotation matrix
 	*/
-	[CLink] public static extern void glm_euler_by_order(vec3 angles, glm_euler_seq ord, mat4 dest);
+	[CLink] public static extern void glmc_euler_by_order(vec3 angles, glm_euler_seq ord, mat4 dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -155,7 +155,7 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_xyz_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_xyz_quat(vec3 angles, versor dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -164,7 +164,7 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_xzy_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_xzy_quat(vec3 angles, versor dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -173,7 +173,7 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_yxz_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_yxz_quat(vec3 angles, versor dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -182,7 +182,7 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_yzx_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_yzx_quat(vec3 angles, versor dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -191,7 +191,7 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_zxy_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_zxy_quat(vec3 angles, versor dest);
 
 	/*!
 	* @brief creates NEW quaternion using rotation angles and does
@@ -200,5 +200,5 @@ extension cglm
 	* @param[in]   angles angles x y z (radians)
 	* @param[out]  dest   quaternion
 	*/
-	[CLink] public static extern void glm_euler_zyx_quat(vec3 angles, versor dest);
+	[CLink] public static extern void glmc_euler_zyx_quat(vec3 angles, versor dest);
 }

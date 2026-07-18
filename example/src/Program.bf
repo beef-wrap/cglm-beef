@@ -14,11 +14,11 @@ static class Program
 	{
 		float[2][2]  src = .(.(1, 2), .(3, 4));
 		float[2][2]  dest = .(.(0, 0), .(0, 0));
-		glm_aabb2d_copy(src, dest);
+		glmc_aabb2d_copy(src, dest);
 		Debug.WriteLine($"{dest[0][0]} {dest[0][1]}");
 
 		float[2] vec_dest = .();
-		glm_vec2_add(.(1, 2), .(2, 3), vec_dest);
+		glmc_vec2_add(.(1, 2), .(2, 3), vec_dest);
 		Debug.WriteLine($"{vec_dest[0]} {vec_dest[1]}");
 
 		return 0;
