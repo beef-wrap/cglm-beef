@@ -8,9 +8,12 @@
             .url = "git+https://github.com/recp/cglm#6e2976d415e96659b8045c727440aa261695215e",
             .hash = "N-V-__8AADM_JACt9277GveWaVJMDD2tqQgk0yi2lMPakSBX",
         },
-        .zig_build_helpers = .{
+        .zbh = .{
             .url = "git+https://github.com/beef-wrap/zig-build-helpers.git#38d22bdc999ec1dfc7b9fbeb57d8eef5ad386fc7",
             .hash = "zig_build_helpers-0.0.2-TjjtbcwRAABjUSnFWS18yOxUhaUCP8kr7mXC_i7nYcCG",
+        },
+        .zbh = .{
+            .path = "../zig-build-helpers",
         },
     },
     .paths = .{
